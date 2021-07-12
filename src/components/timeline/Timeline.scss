@@ -1,0 +1,70 @@
+@import "src/styles/colors";
+@import "src/styles/media";
+
+ul.timeline {
+    list-style: none;
+    padding: 2em 0 2em 2em;
+    position: relative;
+
+    // line
+    &:before {
+        width: 0.2em;
+        top: 0;
+        bottom: 1em;
+        position: absolute;
+        content: " ";
+        background-color: $light-text;
+        margin-left: -1.5px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+}
+
+ul.timeline > li {
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+    // marker
+    &:before {
+        width: 1em;
+        height: 1em;
+        content: " ";
+        background-color: $light-text;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 1.5em;
+        margin-top: 0.25em;
+    }
+}
+
+ul.timeline-with-embeds > li {
+    display: grid;
+    @include not-tablet {
+        grid-template-areas:
+            "text embed"
+            "links embed";
+        grid-template-columns: 3fr 4fr;
+        grid-template-rows: auto 1fr;
+        align-items: start;
+    }
+    @include tablet-only {
+        grid-template-areas:
+                "text"
+                "embed"
+                "links";
+        grid-template-rows: 1fr;
+    }
+
+    & .embed { grid-area: embed; }
+    & .text { grid-area: text; }
+    & .links { grid-area: links; }
+
+    & img {
+        width: 100%;
+        @include mobile-only {
+            margin-bottom: 1.5em;
+        }
+    }
+}

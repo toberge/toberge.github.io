@@ -1,0 +1,15 @@
+@import "src/styles/colors";
+@import "src/styles/media";
+
+.about-me {
+    @include not-mobile {
+        display: grid;
+        grid-template-areas: "picture .";
+        grid-template-columns: 12em 1fr;
+        grid-column-gap: 2em;
+
+        & > img {
+            grid-area: picture;
+        }
+    }
+}

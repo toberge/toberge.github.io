@@ -1,0 +1,22 @@
+[
+  {
+    "name": "React",
+    "icon": "react",
+    "description": "My preferred framework for web development."
+  },
+  {
+    "name": "Python",
+    "icon": "python",
+    "description": "Simple but powerful language that I often use for tiny projects."
+  },
+  {
+    "name": "Bourne Again Shell",
+    "icon": "bash",
+    "description": "I mainly use it for writing short scripts that automate day-to-day tasks. I use fish as my interactive shell."
+  },
+  {
+    "name": "JavaScript",
+    "icon": "javascript",
+    "description": "The lingua franca of the web."
+  }
+]

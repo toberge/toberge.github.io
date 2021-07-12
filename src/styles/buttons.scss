@@ -1,0 +1,38 @@
+@import "colors";
+
+a.button {
+    text-decoration: none;
+}
+
+button.button {
+    font-size: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button {
+    padding: 0.3em 0.5em;
+    margin: 0.5em 0.5em;
+
+    color: $light-primary;
+    font-weight: bold;
+
+    border: $light-primary solid 0.2em;
+    transition: border-color 300ms ease-out, color 300ms ease-out;
+
+    &:hover,
+    &:focus {
+        color: $light-primary-hover;
+        border-color: $light-primary-hover;
+    }
+}
+
+.links {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    & > .button {
+        margin: 0.5em 0.7em !important;
+    }
+}

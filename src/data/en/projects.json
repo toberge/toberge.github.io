@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Nessie",
+        "date": "2020–2021",
+        "description": "Simple UNIX shell written in C.",
+        "embed": {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/toberge/nessie/master/res/demo.svg"
+        },
+        "githubURL": "https://github.com/toberge/nessie"
+    },
+    {
+        "name": "Dosuku",
+        "date": "2020",
+        "description": "Sudoko game.",
+        "embed": {
+            "type": "image",
+            "url": "https://i.imgur.com/9XL9gjj.png"
+        },
+        "githubURL": "https://github.com/toberge/dosuku",
+        "demoURL": "https://toberge.github.io/dosuku"
+    }
+]

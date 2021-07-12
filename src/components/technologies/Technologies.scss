@@ -1,0 +1,30 @@
+@import "src/styles/colors";
+
+.technology-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#technology-name,
+#technology-description {
+    transition: opacity 300ms ease-out;
+
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+
+    & i {
+        font-size: 3em;
+        cursor: pointer;
+        transition: color 300ms ease-out;
+
+        &:hover {
+            color: $light-primary;
+        }
+    }
+}

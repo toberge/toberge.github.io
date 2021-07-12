@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Nessie",
+    "date": "2020–2021",
+    "description": "UNIX-shell skrevet i C.",
+    "embed": {
+      "type": "image",
+      "url": "https://raw.githubusercontent.com/toberge/nessie/master/res/demo.svg"
+    },
+    "githubURL": "https://github.com/toberge/nessie"
+  }
+]
