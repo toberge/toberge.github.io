@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./App.scss";
-import { AboutMe } from "./components/aboutme/AboutMe";
 import { initTranslations } from "./data/Translations";
-import Navbar from "./components/navbar/Navbar";
-import Projects from "./components/timeline/Projects";
-import Work from "./components/timeline/Work";
-import Education from "./components/timeline/Education";
 import i18next from "i18next";
-import Technologies from "./components/technologies/Technologies";
+const Navbar = React.lazy(() => import("./components/navbar/Navbar"));
+const AboutMe = React.lazy(() => import("./components/aboutme/AboutMe"));
+const Technologies = React.lazy(
+    () => import("./components/technologies/Technologies"),
+);
+const Projects = React.lazy(() => import("./components/projects/Projects"));
+const Work = React.lazy(() => import("./components/timeline/Work"));
+const Education = React.lazy(() => import("./components/timeline/Education"));
 
 function App() {
     const [language, setLanguage] = useState("en");
@@ -17,21 +19,27 @@ function App() {
     }, []);
 
     useEffect(() => {
-        i18next.changeLanguage(language);
+        (async () => {
+            await i18next.changeLanguage(language);
+        })();
     }, [language]);
 
     return (
         <div className="App">
             <header>
                 <h1>Tore Bergebakken</h1>
-                <Navbar setLanguage={setLanguage} />
+                <React.Suspense fallback={() => <></>}>
+                    <Navbar setLanguage={setLanguage} />
+                </React.Suspense>
             </header>
             <main>
-                <AboutMe />
-                <Technologies />
-                <Projects />
-                <Work />
-                <Education />
+                <React.Suspense fallback={() => <h1>Loading...</h1>}>
+                    <AboutMe />
+                    <Technologies />
+                    <Projects />
+                    <Work />
+                    <Education />
+                </React.Suspense>
             </main>
         </div>
     );

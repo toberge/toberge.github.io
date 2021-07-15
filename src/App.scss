@@ -18,16 +18,28 @@ body {
     align-items: center;
 }
 
-header { grid-area: header; }
-main { grid-area: main; }
-footer { grid-area: footer; }
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
 
 header {
     text-align: center;
 }
 
+body {
+    @include tablet-only {
+        padding: 0 1em;
+    }
+}
+
 main {
-    @include not-mobile {
+    @include not-tablet {
         max-width: 50em;
     }
 }
@@ -48,5 +60,4 @@ nav > a {
     }
 
     transition: background-color 300ms ease-out;
-
 }

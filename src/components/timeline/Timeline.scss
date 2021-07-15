@@ -23,7 +23,7 @@ ul.timeline {
 ul.timeline > li {
     margin-left: 2em;
     margin-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
     // marker
     &:before {
@@ -36,35 +36,5 @@ ul.timeline > li {
         position: absolute;
         left: 1.5em;
         margin-top: 0.25em;
-    }
-}
-
-ul.timeline-with-embeds > li {
-    display: grid;
-    @include not-tablet {
-        grid-template-areas:
-            "text embed"
-            "links embed";
-        grid-template-columns: 3fr 4fr;
-        grid-template-rows: auto 1fr;
-        align-items: start;
-    }
-    @include tablet-only {
-        grid-template-areas:
-                "text"
-                "embed"
-                "links";
-        grid-template-rows: 1fr;
-    }
-
-    & .embed { grid-area: embed; }
-    & .text { grid-area: text; }
-    & .links { grid-area: links; }
-
-    & img {
-        width: 100%;
-        @include mobile-only {
-            margin-bottom: 1.5em;
-        }
     }
 }
