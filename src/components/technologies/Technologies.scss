@@ -6,10 +6,9 @@
     align-items: center;
 }
 
-#technology-name,
 #technology-description {
     transition: opacity 300ms ease-out;
-
+    opacity: 0;
 }
 
 .technology-grid {
