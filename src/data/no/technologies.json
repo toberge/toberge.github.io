@@ -1,22 +1,22 @@
 [
-  {
-    "name": "React",
-    "icon": "react",
-    "description": "Et rammeverk for dynamiske webapplikasjoner."
-  },
-  {
-    "name": "Python",
-    "icon": "python",
-    "description": "Språket jeg liker best å skrive mindre prosjekter i."
-  },
-  {
-    "name": "Bourne Again Shell",
-    "icon": "bash",
-    "description": "Jeg skriver ofte små skript i bash for å automatisere hverdagslige problmer."
-  },
-  {
-    "name": "JavaScript",
-    "icon": "javascript",
-    "description": "Det definitive språket for webutvikling."
-  }
+    {
+        "name": "React",
+        "icon": "react",
+        "description": "Et rammeverk for dynamiske webapplikasjoner."
+    },
+    {
+        "name": "Python",
+        "icon": "python",
+        "description": "Språket jeg liker best å skrive mindre prosjekter i."
+    },
+    {
+        "name": "Bourne Again Shell",
+        "icon": "bash",
+        "description": "Jeg skriver ofte små skript i bash for å automatisere hverdagslige problmer."
+    },
+    {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "description": "Det definitive språket for webutvikling."
+    }
 ]

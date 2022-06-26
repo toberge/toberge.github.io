@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Icons from "../common/Icons";
 import { withTranslation } from "react-i18next";
 import { technologies } from "../../data/Technologies";

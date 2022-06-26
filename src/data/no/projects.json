@@ -1,12 +1,55 @@
 [
-  {
-    "name": "Nessie",
-    "date": "2020–2021",
-    "description": "UNIX-shell skrevet i C.",
-    "embed": {
-      "type": "image",
-      "url": "https://raw.githubusercontent.com/toberge/nessie/master/res/demo.svg"
+    {
+        "name": "Grafikkprosjekt",
+        "date": "2022",
+        "description": "Sluttprosjekt i faget Grafikk og visualisering. Forskjellige shadere vist på skjermer som reflekterer omgivelsene. En av disse shaderne er vist her.",
+        "embed": {
+            "type": "shadertoy",
+            "url": "https://www.shadertoy.com/embed/7ljcRG?t=4.5"
+        },
+        "githubURL": "https://github.com/toberge/graphics-project",
+        "demoURL": "https://www.shadertoy.com/playlist/scXXzs"
     },
-    "githubURL": "https://github.com/toberge/nessie"
-  }
+    {
+        "name": "Dumpster Finder",
+        "date": "2021",
+        "description": "Bacheloroppgave. App for anonym informasjonsdeling mellom dumpster-divere.",
+        "embed": {
+            "type": "image",
+            "url": "https://i.imgur.com/7WpHxdp.png"
+        },
+        "githubURL": "https://github.com/dumpster-finder/dumpster-finder",
+        "paperURL": "https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2778054"
+    },
+    {
+        "name": "Nessie",
+        "date": "2020–2021",
+        "description": "Minimalt UNIX-skall skrevet i C.",
+        "embed": {
+            "type": "image",
+            "url": "https://raw.githubusercontent.com/toberge/nessie/master/res/demo.svg"
+        },
+        "githubURL": "https://github.com/toberge/nessie"
+    },
+    {
+        "name": "Dosuku",
+        "date": "2020",
+        "description": "Sudoko.",
+        "embed": {
+            "type": "image",
+            "url": "https://i.imgur.com/9XL9gjj.png"
+        },
+        "githubURL": "https://github.com/toberge/dosuku",
+        "demoURL": "https://toberge.github.io/dosuku"
+    },
+    {
+        "name": "Fridge News",
+        "date": "2019",
+        "description": "Standard nyhetsside.",
+        "embed": {
+            "type": "image",
+            "url": "https://i.imgur.com/iB2ACvN.png"
+        },
+        "githubURL": "https://github.com/toberge/fridge-news"
+    }
 ]

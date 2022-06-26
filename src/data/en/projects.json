@@ -1,5 +1,16 @@
 [
     {
+        "name": "Graphics Project",
+        "date": "2022",
+        "description": "Final project in Graphics & Visualization. Various shaders displayed on monitors that reflect the surroundings. One such shader is shown here.",
+        "embed": {
+            "type": "shadertoy",
+            "url": "https://www.shadertoy.com/embed/7ljcRG?t=4.5"
+        },
+        "githubURL": "https://github.com/toberge/graphics-project",
+        "demoURL": "https://www.shadertoy.com/playlist/scXXzs"
+    },
+    {
         "name": "Dumpster Finder",
         "date": "2021",
         "description": "Bachelor's thesis. App for dumpster divers with focus on anonymity.",
@@ -7,7 +18,8 @@
             "type": "image",
             "url": "https://i.imgur.com/7WpHxdp.png"
         },
-        "githubURL": "https://github.com/dumpster-finder/dumpster-finder"
+        "githubURL": "https://github.com/dumpster-finder/dumpster-finder",
+        "paperURL": "https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2778054"
     },
     {
         "name": "Nessie",

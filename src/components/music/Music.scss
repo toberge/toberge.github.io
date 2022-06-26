@@ -1,0 +1,35 @@
+@import "src/styles/colors";
+@import "src/styles/media";
+
+ul.music-area {
+    list-style: none;
+    position: relative;
+
+    padding-top: 2em;
+    @include not-mobile {
+        padding: 2em 0 2em 2em;
+    }
+
+    // line
+    @include not-mobile {
+        &:before {
+            width: 0.2em;
+            top: 0;
+            bottom: 1em;
+            position: absolute;
+            content: " ";
+            background-color: $light-text;
+            margin-left: -1.5px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+    }
+}
+
+ul.music-area > li {
+    @include not-mobile {
+        margin-left: 2em;
+        margin-right: 1em;
+    }
+    margin-bottom: 1em;
+}

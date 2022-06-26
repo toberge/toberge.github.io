@@ -1,51 +1,30 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { withTranslation } from "react-i18next";
-import { projects } from "../../data/Projects";
+import { Project, projects } from "../../data/Projects";
 import Icons from "../common/Icons";
-import { Embed } from "../../data/Embed";
 import "./Projects.scss";
+import { EmbedBox } from "../shared/Embed";
+import { i18n } from "i18next";
 
 interface Props {
-    title: string;
-    subtitle?: string;
-    date: string;
-    description?: string;
-    embed?: Embed;
-    githubURL?: string;
-    demoURL?: string;
+    project: Project;
+    i18n: i18n;
 }
 
 export function ProjectItem({
-    title,
-    subtitle,
-    date,
-    description,
-    embed,
-    githubURL,
-    demoURL,
+    project: { name, date, description, embed, githubURL, paperURL, demoURL },
+    i18n,
 }: Props) {
     return (
         <li className="project">
             <div className="text">
                 <h2>
                     <span className={"time"}>{date}</span> —{" "}
-                    <span className={"title"}>{title}</span>
+                    <span className={"title"}>{name}</span>
                 </h2>
-                {subtitle && <h3>{subtitle}</h3>}
                 {description && <p>{description}</p>}
             </div>
-            {embed &&
-                (embed.type === "image" ? (
-                    <img
-                        className="embed"
-                        src={embed.url}
-                        alt={embed.altText}
-                    />
-                ) : (
-                    embed.type === "youtube" && (
-                        <p className="embed">video here</p>
-                    )
-                ))}
+            {embed && <EmbedBox embed={embed} />}
             <div className="links">
                 {githubURL && (
                     <a
@@ -54,7 +33,19 @@ export function ProjectItem({
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <Icons.GitHub /> Code
+                        <Icons.GitHub />
+                        {" " + i18n.t("Code")}
+                    </a>
+                )}
+                {paperURL && (
+                    <a
+                        className="button"
+                        href={paperURL}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <Icons.Paper />
+                        {" " + i18n.t("Paper")}
                     </a>
                 )}
                 {demoURL && (
@@ -64,7 +55,8 @@ export function ProjectItem({
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <Icons.Demo /> Demo
+                        <Icons.Demo />
+                        {" " + i18n.t("Demo")}
                     </a>
                 )}
             </div>
@@ -86,14 +78,7 @@ const Projects = withTranslation()(({ i18n }) => {
                 {(projects[i18n.language] || projects["en"])
                     .slice(0, showAll ? undefined : 3)
                     .map(p => (
-                        <ProjectItem
-                            title={p.name}
-                            date={p.date}
-                            description={p.description}
-                            embed={p.embed}
-                            githubURL={p.githubURL}
-                            demoURL={p.demoURL}
-                        />
+                        <ProjectItem project={p} i18n={i18n} />
                     ))}
                 {!showAll &&
                     (projects[i18n.language] || projects["en"]).length > 3 && (

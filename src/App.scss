@@ -33,14 +33,13 @@ header {
 }
 
 body {
-    @include tablet-only {
-        padding: 0 1em;
-    }
+    width: calc(100% - 2em);
+    padding: 0 1em;
 }
 
 main {
     @include not-tablet {
-        max-width: 50em;
+        max-width: 60em;
     }
 }
 

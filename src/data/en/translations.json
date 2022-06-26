@@ -1,8 +1,10 @@
 {
     "About": "About",
-    "AboutText": "Full-stack software developer that",
+    "AboutText": "I am a full-stack software developer and student with a passion for functional programming and shader coding. In my spare time I read books and play the accordion, the piano and indie games. I enjoy tinkering with odd programming languages and techniques, and from time to time I make music.",
     "About Me": "About Me",
     "Education": "Education",
     "Work": "Work",
-    "Projects": "Projects"
+    "Projects": "Projects",
+    "Music": "Music",
+    "OtherLanguage": "Bytt til norsk"
 }

@@ -1,1 +1,9 @@
 @import "src/styles/colors";
+@import "src/styles/media";
+
+nav {
+    @include mobile-only {
+        display: flex;
+        flex-direction: column;
+    }
+}

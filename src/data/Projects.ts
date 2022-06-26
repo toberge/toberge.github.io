@@ -9,6 +9,7 @@ export interface Project {
     embed?: Embed;
     githubURL?: string;
     demoURL?: string;
+    paperURL?: string;
 }
 
 export const projects: Record<string, Project[]> = {

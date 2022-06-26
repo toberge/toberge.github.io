@@ -5,7 +5,7 @@
     @include not-mobile {
         display: grid;
         grid-template-areas: "picture .";
-        grid-template-columns: 12em 1fr;
+        grid-template-columns: 18em 1fr;
         grid-column-gap: 2em;
 
         & > img {

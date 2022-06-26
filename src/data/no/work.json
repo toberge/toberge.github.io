@@ -1,9 +1,27 @@
 [
     {
+        "date": "Sommeren 2022",
+        "title": "AutoStore",
+        "position": "Sommerstudent",
+        "description": "Frontendutvikling med React og D3."
+    },
+    {
+        "date": "Høsten 2021 til våren 2022",
+        "title": "AutoStore",
+        "position": "Fullstack-utvikler på deltid",
+        "description": "Dataanalyse og frontendutvikling."
+    },
+    {
+        "date": "Høsten 2021 til høsten 2022",
+        "title": "Frivillig arbeid",
+        "position": "Leder av AbelLAN",
+        "description": "Lederrolle i en studentorganisasjon som arrangerer LAN."
+    },
+    {
         "date": "Sommeren 2021",
         "title": "AutoStore",
         "position": "Sommerstudent",
-        "description": "Sorry, jeg signerte en NDA"
+        "description": "Dataanalyse på Spark-clustere."
     },
     {
         "date": "Høsten 2020",
@@ -14,7 +32,7 @@
     {
         "date": "Sommerne 2013–2020",
         "title": "Bergebakken gård",
-        "position": "Gårdsarbeid"
+        "position": "Gårdsarbeider"
     },
     {
         "date": "Sommeren 2012",

@@ -18,6 +18,7 @@ button.button {
     font-weight: bold;
 
     border: $light-primary solid 0.2em;
+    border-bottom-right-radius: 1em;
     transition: border-color 300ms ease-out, color 300ms ease-out;
 
     &:hover,

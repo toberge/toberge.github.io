@@ -1,9 +1,27 @@
 [
     {
+        "date": "Summer 2022",
+        "title": "AutoStore",
+        "position": "Summer Intern",
+        "description": "Frontend development in React and D3."
+    },
+    {
+        "date": "Autum 2021 to Spring 2022",
+        "title": "AutoStore",
+        "position": "Part-time Fullstack Developer",
+        "description": "Data analysis and frontend development."
+    },
+    {
+        "date": "Autum 2021 to Autumn 2022",
+        "title": "Volunteer work",
+        "position": "Leader of AbelLAN",
+        "description": "Leader position in a student organization that hosts LAN parties."
+    },
+    {
         "date": "Summer 2021",
         "title": "AutoStore",
         "position": "Summer Intern",
-        "description": "Worked on secret things."
+        "description": "Data analysis on Spark clusters."
     },
     {
         "date": "Autumn 2020",
@@ -14,7 +32,7 @@
     {
         "date": "Summers 2013–2020",
         "title": "Bergebakken gård",
-        "position": "Farm Assistant"
+        "position": "Farmhand"
     },
     {
         "date": "Summer 2012",

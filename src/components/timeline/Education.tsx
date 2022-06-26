@@ -1,4 +1,3 @@
-import React from "react";
 import { withTranslation } from "react-i18next";
 import { Timeline } from "./Timeline";
 import { TimelineItem } from "./TimelineItem";

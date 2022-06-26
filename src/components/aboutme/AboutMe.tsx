@@ -1,4 +1,3 @@
-import React from "react";
 // @ts-ignore because this library has no TS defs
 import Obfuscate from "react-obfuscate";
 import Icons from "../common/Icons";
@@ -13,11 +12,11 @@ const AboutMe = withTranslation()(({ i18n }) => {
             <h1 id="aboutme">{i18n.t("About Me")}</h1>
             <div className="about-me">
                 <img
-                    src="https://i.imgur.com/99Bdssv.jpg"
-                    alt="Myself in a wool sweater"
+                    src="https://i.imgur.com/X4lQ2Wa.png"
+                    alt="Myself in a red shirt"
                 />
                 <div>
-                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>{i18n.t("AboutText")}</p>
                     <div className="links">
                         <a
                             className="button"

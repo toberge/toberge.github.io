@@ -1,5 +1,10 @@
 [
     {
+        "date": "2021–2023",
+        "school": "NTNU",
+        "program": "Master of Science in Computer Science – Algorithms & Computers"
+    },
+    {
         "date": "2018–2021",
         "school": "NTNU",
         "program": "Bachelor of Engineering in Computer Science"
@@ -7,11 +12,11 @@
     {
         "date": "2017–2018",
         "school": "Elverum FHS",
-        "program": "Musikkproduksjon live & studio"
+        "program": "Music Production Live & Studio"
     },
     {
         "date": "2013–2017",
         "school": "Nord-Østerdal VGS",
-        "program": "Studiespesialisering, realfag"
+        "program": "Specialization in General Studies"
     }
 ]

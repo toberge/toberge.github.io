@@ -1,13 +1,18 @@
 {
     "About Me": "Om meg",
-    "AboutText": "Fullstack-programmerer og student med en forkjærlighet for funksjonell programmering.",
+    "AboutText": "Jeg er en fullstack-programmerer og student med en forkjærlighet for funksjonell programmering og shaderkoding. På fritida leser jeg bøker og spiller trekkspill, piano og indiespill. Jeg liker å tukle med særegne programmeringsspråk og -teknikker, og det hender jeg komponerer musikk.",
     "About": "Om",
     "Education": "Utdanning",
     "Email": "Epost",
     "Language": "Språk",
+    "Switch language": "Skift språk",
     "Projects": "Prosjekter",
+    "Code": "Kode",
+    "Paper": "Artikkel",
     "Show All": "Vis alle",
     "Technologies": "Teknologier",
     "Work": "Arbeid",
-    "Work Experience": "Arbeidserfaring"
+    "Work Experience": "Arbeidserfaring",
+    "Music": "Musikk",
+    "OtherLanguage": "Switch to English"
 }

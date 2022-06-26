@@ -1,4 +1,3 @@
-import React from "react";
 import { Embed } from "../../data/Embed";
 
 interface Props {

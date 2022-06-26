@@ -10,6 +10,7 @@ const Technologies = React.lazy(
 const Projects = React.lazy(() => import("./components/projects/Projects"));
 const Work = React.lazy(() => import("./components/timeline/Work"));
 const Education = React.lazy(() => import("./components/timeline/Education"));
+const Music = React.lazy(() => import("./components/music/Music"));
 
 function App() {
     const [language, setLanguage] = useState("en");
@@ -35,10 +36,11 @@ function App() {
             <main>
                 <React.Suspense fallback={() => <h1>Loading...</h1>}>
                     <AboutMe />
-                    <Technologies />
+                    {/* <Technologies /> */}
                     <Projects />
                     <Work />
                     <Education />
+                    <Music />
                 </React.Suspense>
             </main>
         </div>
