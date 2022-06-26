@@ -1,0 +1,2 @@
+ul.timeline{list-style:none;padding:.5em 0 2em 2em;position:relative}ul.timeline:before{background-color:#232323;border-bottom-left-radius:50%;border-bottom-right-radius:50%;bottom:1em;content:" ";margin-left:-1.5px;position:absolute;top:0;width:.2em}ul.timeline>li{margin-bottom:2em;margin-left:2em;margin-right:1em}ul.timeline>li:before{background-color:#232323;border-radius:50%;content:" ";height:1em;left:1.5em;margin-top:.25em;position:absolute;width:1em}
+/*# sourceMappingURL=782.b2e42010.chunk.css.map*/

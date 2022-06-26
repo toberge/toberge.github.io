@@ -1,0 +1,2 @@
+@media screen and (min-width:601px){.about-me{grid-column-gap:2em;display:grid;grid-template-areas:"picture .";grid-template-columns:18em 1fr}.about-me>img{grid-area:picture}}
+/*# sourceMappingURL=704.a1c42321.chunk.css.map*/

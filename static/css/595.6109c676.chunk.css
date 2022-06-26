@@ -1,0 +1,2 @@
+.technology-wrapper{align-items:center;display:flex;flex-direction:column}#technology-description,#technology-name{transition:opacity .3s ease-out}.technology-grid{grid-gap:.5em;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr)}.technology-grid i{cursor:pointer;font-size:3em;transition:color .3s ease-out}.technology-grid i:hover{color:#9f2929}
+/*# sourceMappingURL=595.6109c676.chunk.css.map*/

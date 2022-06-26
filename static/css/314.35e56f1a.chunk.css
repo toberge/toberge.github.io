@@ -1,0 +1,2 @@
+ul.music-area{list-style:none;padding-top:2em;position:relative}@media screen and (min-width:601px){ul.music-area{padding:2em 0 2em 2em}ul.music-area:before{background-color:#232323;border-bottom-left-radius:50%;border-bottom-right-radius:50%;bottom:1em;content:" ";margin-left:-1.5px;position:absolute;top:0;width:.2em}}ul.music-area>li{margin-bottom:1em}@media screen and (min-width:601px){ul.music-area>li{margin-left:2em;margin-right:1em}}
+/*# sourceMappingURL=314.35e56f1a.chunk.css.map*/
