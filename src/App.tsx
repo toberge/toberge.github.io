@@ -29,12 +29,12 @@ function App() {
         <div className="App">
             <header>
                 <h1>Tore Bergebakken</h1>
-                <React.Suspense fallback={() => <></>}>
+                <React.Suspense fallback={<></>}>
                     <Navbar setLanguage={setLanguage} />
                 </React.Suspense>
             </header>
             <main>
-                <React.Suspense fallback={() => <h1>Loading...</h1>}>
+                <React.Suspense fallback={<h1>Loading...</h1>}>
                     <AboutMe />
                     {/* <Technologies /> */}
                     <Projects />

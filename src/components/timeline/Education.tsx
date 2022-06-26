@@ -1,15 +1,15 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Timeline } from "./Timeline";
 import { TimelineItem } from "./TimelineItem";
 import { education } from "../../data/Education";
 
-const Education = withTranslation()(({ i18n }) => {
-    if (!i18n) return <></>;
+const Education = () => {
+    const { t, i18n } = useTranslation();
 
     return (
         <>
             <h1 id="education" style={{ marginBottom: 0 }}>
-                {i18n.t("Education")}
+                {t("Education")}
             </h1>
             <Timeline>
                 {(education[i18n.language] || education["en"]).map(e => (
@@ -23,6 +23,6 @@ const Education = withTranslation()(({ i18n }) => {
             </Timeline>
         </>
     );
-});
+};
 
 export default Education;

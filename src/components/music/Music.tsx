@@ -1,14 +1,14 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { EmbedBox } from "../shared/Embed";
 import "./Music.scss";
 
-const Music = withTranslation()(({ i18n }) => {
-    if (!i18n) return <></>;
+const Music = () => {
+    const { t } = useTranslation();
 
     return (
         <>
             <h1 id="music" style={{ marginBottom: 0 }}>
-                {i18n.t("Music")}
+                {t("Music")}
             </h1>
             <ul className="music-area">
                 {[
@@ -25,6 +25,6 @@ const Music = withTranslation()(({ i18n }) => {
             </ul>
         </>
     );
-});
+};
 
 export default Music;

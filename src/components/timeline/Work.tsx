@@ -1,14 +1,14 @@
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Timeline } from "./Timeline";
 import { TimelineItem } from "./TimelineItem";
 import { workExperience } from "../../data/Work";
 
-const Work = withTranslation()(({ i18n }) => {
-    if (!i18n) return <></>;
+const Work = () => {
+    const { t, i18n } = useTranslation();
     return (
         <>
             <h1 id="work" style={{ marginBottom: 0 }}>
-                {i18n.t("Work Experience")}
+                {t("Work Experience")}
             </h1>
             <Timeline>
                 {(workExperience[i18n.language] || workExperience["en"]).map(
@@ -24,6 +24,6 @@ const Work = withTranslation()(({ i18n }) => {
             </Timeline>
         </>
     );
-});
+};
 
 export default Work;

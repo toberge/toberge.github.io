@@ -1,20 +1,16 @@
 import { useState } from "react";
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Project, projects } from "../../data/Projects";
 import Icons from "../common/Icons";
 import "./Projects.scss";
 import { EmbedBox } from "../shared/Embed";
-import { i18n } from "i18next";
-
-interface Props {
-    project: Project;
-    i18n: i18n;
-}
 
 export function ProjectItem({
     project: { name, date, description, embed, githubURL, paperURL, demoURL },
-    i18n,
-}: Props) {
+}: {
+    project: Project;
+}) {
+    const { t } = useTranslation();
     return (
         <li className="project">
             <div className="text">
@@ -34,7 +30,7 @@ export function ProjectItem({
                         rel="noreferrer noopener"
                     >
                         <Icons.GitHub />
-                        {" " + i18n.t("Code")}
+                        {" " + t("Code")}
                     </a>
                 )}
                 {paperURL && (
@@ -45,7 +41,7 @@ export function ProjectItem({
                         rel="noreferrer noopener"
                     >
                         <Icons.Paper />
-                        {" " + i18n.t("Paper")}
+                        {" " + t("Paper")}
                     </a>
                 )}
                 {demoURL && (
@@ -56,7 +52,7 @@ export function ProjectItem({
                         rel="noreferrer noopener"
                     >
                         <Icons.Demo />
-                        {" " + i18n.t("Demo")}
+                        {" " + t("Demo")}
                     </a>
                 )}
             </div>
@@ -64,21 +60,20 @@ export function ProjectItem({
     );
 }
 
-const Projects = withTranslation()(({ i18n }) => {
+const Projects = () => {
+    const { t, i18n } = useTranslation();
     const [showAll, setShowAll] = useState(false);
-
-    if (!i18n) return <></>;
 
     return (
         <>
             <h1 id="projects" style={{ marginBottom: 0 }}>
-                {i18n.t("Projects")}
+                {t("Projects")}
             </h1>
             <ul className="project-area">
                 {(projects[i18n.language] || projects["en"])
                     .slice(0, showAll ? undefined : 3)
                     .map(p => (
-                        <ProjectItem project={p} i18n={i18n} />
+                        <ProjectItem project={p} />
                     ))}
                 {!showAll &&
                     (projects[i18n.language] || projects["en"]).length > 3 && (
@@ -87,13 +82,13 @@ const Projects = withTranslation()(({ i18n }) => {
                                 className="button"
                                 onClick={() => setShowAll(true)}
                             >
-                                {i18n.t("Show All")}
+                                {t("Show All")}
                             </button>
                         </li>
                     )}
             </ul>
         </>
     );
-});
+};
 
 export default Projects;

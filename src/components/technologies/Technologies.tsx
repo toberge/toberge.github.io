@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Icons from "../common/Icons";
-import { withTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { technologies } from "../../data/Technologies";
 import "./Technologies.scss";
 
@@ -10,18 +10,16 @@ const tempTech = {
     description: "Something is wrong if you still see this",
 };
 
-const Technologies = withTranslation()(({ i18n }) => {
+const Technologies = () => {
+    const { t, i18n } = useTranslation();
     const [index, setIndex] = useState(0);
 
-    if (!i18n) return <></>;
-
     const techs = technologies[i18n.language] || technologies["en"];
-
     const technology = techs[index] || tempTech;
 
     return (
         <>
-            <h1 id="technologies">{i18n.t("Technologies")}</h1>
+            <h1 id="technologies">{t("Technologies")}</h1>
             <h2 id="technology-name">{technology.name}</h2>
             <p id="technology-description">{technology.description}</p>
             <div className="technology-wrapper">
@@ -38,6 +36,6 @@ const Technologies = withTranslation()(({ i18n }) => {
             </div>
         </>
     );
-});
+};
 
 export default Technologies;
