@@ -51,12 +51,5 @@ main h1 {
 nav > a {
     text-decoration: none;
     padding: 0.5em;
-    background-color: $light-bg-inset;
     color: $light-text;
-
-    &:hover {
-        background-color: $light-bg;
-    }
-
-    transition: background-color 300ms ease-out;
 }

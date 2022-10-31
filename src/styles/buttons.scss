@@ -6,7 +6,6 @@ a.button {
 
 button.button {
     font-size: 100%;
-    background-color: transparent;
     cursor: pointer;
 }
 
@@ -14,6 +13,7 @@ button.button {
     padding: 0.3em 0.5em;
     margin: 0.5em 0.5em;
 
+    background-color: transparent;
     color: $light-primary;
     font-weight: bold;
 
@@ -23,6 +23,7 @@ button.button {
 
     &:hover,
     &:focus {
+        background-color: transparent;
         color: $light-primary-hover;
         border-color: $light-primary-hover;
     }

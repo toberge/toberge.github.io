@@ -28,16 +28,15 @@ const Navbar = ({
             <a className="button" href="#music">
                 {t("Music")}
             </a>
-            <button
+            <a
                 className="button"
+                href="javascript:void()"
                 onClick={() =>
                     setLanguage(i18n.language === "no" ? "en" : "no")
                 }
             >
-                <>
-                    <Icons.Language /> {i18n.t("OtherLanguage")}
-                </>
-            </button>
+                <Icons.Language /> {t("OtherLanguage")}
+            </a>
         </nav>
     );
 };
